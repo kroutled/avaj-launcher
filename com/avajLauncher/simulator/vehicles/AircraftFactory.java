@@ -1,4 +1,4 @@
-package vehicles;
+package avaj.src.kroutled.simulator.vehicles;
 
 public class AircraftFactory {
 
