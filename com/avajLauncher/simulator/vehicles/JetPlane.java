@@ -1,12 +1,13 @@
-package vehicles;
+package com.avajLauncher.simulator.vehicles;
 
-import com.avajLauncher.weather;
+import com.avajLauncher.weather.Coordinates;
+import com.avajLauncher.simulator.WeatherTower;
 
 public class JetPlane extends Aircraft implements Flyable {
 
 	private WeatherTower weatherTower = new WeatherTower();
 
-	JetPlane(string name, Coordinates coordinates)
+	JetPlane(String name, Coordinates coordinates)
 	{
 		this.name = name;
 		this.coordinates = coordinates;
@@ -15,7 +16,7 @@ public class JetPlane extends Aircraft implements Flyable {
 	public void updateConditions()
 	{
 
-		string weather = weatherTower.getWeather(this.coordinates);
+		String weather = weatherTower.getWeather(this.coordinates);
 
 		switch(weather)
 		{
@@ -23,14 +24,14 @@ public class JetPlane extends Aircraft implements Flyable {
 				this.coordinates.setLatitude(this.coordinates.getLatitude() + 5);
 				break;
 			case "FOG":
-				this.coordinates.setLatitude(this.Coordinates.getLatitude() + 1);
+				this.coordinates.setLatitude(this.coordinates.getLatitude() + 1);
 				break;
 			case "SUN":
-				this.coordinates.setLatitude(this.Coordinates.getLatitude() + 10);
-				this.coordinates.setHeight(this.Coordinates.getHeight() + 2);
+				this.coordinates.setLatitude(this.coordinates.getLatitude() + 10);
+				this.coordinates.setHeight(this.coordinates.getHeight() + 2);
 				break;
 			case "SNOW":
-				this.coordinates.setHeight(this.Coordinates.getHeight() - 7);
+				this.coordinates.setHeight(this.coordinates.getHeight() - 7);
 				break;
 		}
 		

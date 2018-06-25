@@ -1,10 +1,12 @@
-package vehicles;
+package com.avajLauncher.simulator;
 
 import java.util.List;
+import java.util.ArrayList;
+import com.avajLauncher.simulator.vehicles.Flyable;
 
 public abstract class Tower {
 	
-	private List<Flyable> observers = new List<Flyable>();
+	private List<Flyable> observers = new ArrayList<Flyable>();
 
 
 	public void register(Flyable flyable)
@@ -19,17 +21,15 @@ public abstract class Tower {
 	{
 		if (observers.contains(flyable))
 		{
-			observsers.remove(flyable);
+			observers.remove(flyable);
 		}
 	}
 
 	protected void conditionsChanged()
 	{
-		int i = 0;
-
-		while (observers[i])
+		for (Flyable flyable:observers)
 		{
-			observers[i].updateConditions();
+			flyable.updateConditions();
 		}
 	}
 }

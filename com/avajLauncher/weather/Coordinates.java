@@ -5,7 +5,7 @@ public class Coordinates {
 	private int latitude = 0;
 	private int height = 0;
 
-	Coordinates (int longitude, int latitude, int height)
+	public Coordinates (int longitude, int latitude, int height)
 	{
 		if (height < 0)
 			height = 0;

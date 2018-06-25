@@ -1,4 +1,9 @@
-package com.avajLauncher.simulator
+package com.avajLauncher.simulator;
+
+import java.io.*;
+import simulator.vehicles.Flyable;
+import com.avajLauncher.simulator;
+import java.util.*;
 
 public class Simulator {
 
@@ -40,7 +45,8 @@ public class Simulator {
                 for (int i = 1; i <= simulation; i++)
                 {
                     String simulationWrite = "Simulation: " + i + "\n";
-                    weatherTower.writeToFile("write", simulationWrite);
+					System.out.println(simulationWrite);
+                    //weatherTower.writeToFile("write", simulationWrite);
                     weatherTower.changeWeather();
                 }
             }

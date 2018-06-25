@@ -1,12 +1,13 @@
-package vehicles;
+package com.avajLauncher.simulator.vehicles;
 
-import com.avajLauncher.weather;
+import com.avajLauncher.weather.Coordinates;
+import com.avajLauncher.simulator.WeatherTower;
 
 public class Helicopter extends Aircraft implements Flyable {
 
 	private WeatherTower weatherTower = new WeatherTower();
 
-	Helicopter (string name, Coordinates coordinates)
+	Helicopter (String name, Coordinates coordinates)
 	{
 		this.name = name;
 		this.coordinates = coordinates; 
@@ -14,7 +15,7 @@ public class Helicopter extends Aircraft implements Flyable {
 
 	public void updateConditions()
 	{
-		string weather = weatherTower.getWeather(this.coordinates);
+		String weather = weatherTower.getWeather(this.coordinates);
 
 		switch(weather)
 		{
@@ -25,7 +26,7 @@ public class Helicopter extends Aircraft implements Flyable {
 				this.coordinates.setLongitude(this.coordinates.getLongitude() + 1);
 				break;
 			case "SUN":
-				this.coordinates.setLongitude(this.coordinates.getLogitude() + 10);
+				this.coordinates.setLongitude(this.coordinates.getLongitude() + 10);
 				this.coordinates.setHeight(this.coordinates.getHeight() + 2);
 				break;
 			case "SNOW":

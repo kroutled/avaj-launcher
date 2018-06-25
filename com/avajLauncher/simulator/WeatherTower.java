@@ -1,16 +1,16 @@
-package simulator;
+package com.avajLauncher.simulator;
 
-public class WeatherTower {
+import com.avajLauncher.weather.*;
 
-	public string	getWeather(Coordinates coordinates)
+public class WeatherTower extends Tower {
+
+	public String	getWeather(Coordinates coordinates)
 	{
-		WeatherProvider weatherProvider= new WeatherProvider();
-		
-		return weatherProvider.getCurrentWeather(coordinates);
+		return WeatherProvider.getProvider().getCurrentWeather(coordinates);
 	}
 
 	void	changeWeather()
 	{
-		this.condiotionsChanged(); 
+		this.conditionsChanged(); 
 	}
 }

@@ -1,23 +1,24 @@
 package com.avajLauncher.weather;
 
 public class WeatherProvider {
-	private static WeatherProvider weatherProvider;
-	private static string[] weather;
+	private static WeatherProvider weatherProvider = null;
+	private static String[] weather;
 
-	private static WeatherProvider()
+	private  WeatherProvider()
 	{
-		this.weatherProvider = new WeatherProvider();
-		this.weather = new string[]{"RAIN", "FOG", "SUN", "SNOW"};
+		weatherProvider = new WeatherProvider();
+		weather = new String[]{"RAIN", "FOG", "SUN", "SNOW"};
 	}
 
-	public WeatherProvider getProvider()
+	public static WeatherProvider getProvider()
 	{
-		return this.weatherProvider;
+		return weatherProvider;
 	}
 
 	public String getCurrentWeather(Coordinates coordinates)
 	{
-		int rand = this.coordinates.getLongitude() + this.coordinates.getLatitude() + this.coordinates.getHeight();
+
+		int rand = coordinates.getLongitude() + coordinates.getLatitude() + coordinates.getHeight();
 		return weather[rand % 4];	
 	}
 }
