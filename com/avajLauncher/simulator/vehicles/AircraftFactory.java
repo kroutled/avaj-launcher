@@ -1,9 +1,20 @@
-package avaj.src.kroutled.simulator.vehicles;
+package vehicles;
 
-public class AircraftFactory {
+public abstract class AircraftFactory {
 
-	public Flyable newAircraft (string type, string name, int longitude, int latitude, int height)
+	public Flyable newAircraft (String type, String name, int longitude, int latitude, int height)
 	{
-		//need to create a check on type and create a new aircraft() accordingly.
+		Coordinates coordinates = new Coordinates(longitude, latitude, height);
+		switch(type){
+			case "Baloon":
+				return new Baloon(name, coordinates);
+				break;
+			case "Helicopter":
+				return new Helicopter(name, coordinates);
+				break;
+			case "JetPlane":
+				return new JetPlane(name, coordinates);
+				break;
+		}
 	}
 }

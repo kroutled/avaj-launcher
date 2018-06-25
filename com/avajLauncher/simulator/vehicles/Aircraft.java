@@ -1,14 +1,14 @@
-package avaj.src.kroutled.simulator.vehicles;
+package vehicles;
 
-import avaj.src.kroutled.weather;
+import com.avajLauncher.weather;
 
-public class Aircraft {
+public abstract class Aircraft {
 
 	protected long id;
-	protected string name;
+	protected String name;
 	protected Coordinates coordinates;
 
-	private long idCounter = 0;
+	private static long idCounter = 0;
 
 	protected long Aircraft(string name, Coordinates coordinates)
 	{
@@ -19,6 +19,6 @@ public class Aircraft {
 
 	private	long nextId()
 	{
-		return id++;
+		return idCounter++;
 	}
 }
