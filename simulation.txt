@@ -1,0 +1,139 @@
+Tower says: Baloon#B1(1) registered to weather tower.
+Tower says: Baloon#B2(2) registered to weather tower.
+Tower says: JetPlane#J1(3) registered to weather tower.
+Tower says: Helicopter#H1(4) registered to weather tower
+Tower says: Helicopter#H2(5) registered to weather tower
+Tower says: Helicopter#H3(6) registered to weather tower
+Tower says: Baloon#B3(7) registered to weather tower.
+Tower says: JetPlane#J2(8) registered to weather tower.
+Tower says: Helicopter#H4(9) registered to weather tower
+Baloon#B1(1): Cant see anything with this damn fog!
+Baloon#B2(2): It's snowing. We're gonna crash.
+JetPlane#J1(3): OMG! Winter is coming!
+Helicopter#H1(4): My rotor is going to freeze!
+Helicopter#H2(5): My rotor is going to freeze!
+HelicopterH3(6): This fog is gonna cause a bumpy one, hang on boys!
+Baloon#B3(7): I can see everything with this sun, how awesome!
+JetPlane#J2(8): It's smooth flying on this sunny day
+Helicopter#H4(9): I hope this rain doesnt rust up my blades...
+Baloon#B1(1): I can see everything with this sun, how awesome!
+Baloon#B2(2): Damn you rain! You messed up my baloon
+JetPlane#J1(3): It's raining. Better watch out for lightings.
+Helicopter#H1(4): My rotor is going to freeze!
+Helicopter#H1(4) has landed at 654, 33, 0 
+Helicopter#H1(4) has deregistered from the weather tower
+Helicopter#H3(6): This is hot.
+Baloon#B3(7): Damn you rain! You messed up my baloon
+JetPlane#J2(8): It's raining. Better watch out for lightings.
+HelicopterH4(9): This fog is gonna cause a bumpy one, hang on boys!
+Baloon#B1(1): Damn you rain! You messed up my baloon
+Baloon#B2(2): It's snowing. We're gonna crash.
+JetPlane#J1(3): Good thing we're flying fast enough to dodge this fog.
+Helicopter#H2(5): My rotor is going to freeze!
+HelicopterH3(6): This fog is gonna cause a bumpy one, hang on boys!
+Baloon#B3(7): It's snowing. We're gonna crash.
+JetPlane#J2(8): Good thing we're flying fast enough to dodge this fog.
+Helicopter#H4(9): This is hot.
+Baloon#B1(1): It's snowing. We're gonna crash.
+Baloon#B2(2): Damn you rain! You messed up my baloon
+JetPlane#J1(3): It's smooth flying on this sunny day
+Helicopter#H2(5): My rotor is going to freeze!
+Helicopter#H3(6): This is hot.
+Baloon#B3(7): Damn you rain! You messed up my baloon
+JetPlane#J2(8): It's smooth flying on this sunny day
+Helicopter#H4(9): This is hot.
+Baloon#B1(1): Damn you rain! You messed up my baloon
+Baloon#B1(1) has landed at 4, 3, 0 
+Baloon#B1(1) has deregistered from the weather tower
+JetPlane#J1(3): It's smooth flying on this sunny day
+Helicopter#H2(5): My rotor is going to freeze!
+Helicopter#H2(5) has landed at 22, 33, 0 
+Helicopter#H2(5) has deregistered from the weather tower
+Baloon#B3(7): It's snowing. We're gonna crash.
+Baloon#B3(7) has landed at 104, 22, 0 
+Baloon#B3(7) has deregistered from the weather tower
+Helicopter#H4(9): This is hot.
+Baloon#B2(2): It's snowing. We're gonna crash.
+JetPlane#J1(3): It's smooth flying on this sunny day
+Helicopter#H3(6): I hope this rain doesnt rust up my blades...
+JetPlane#J2(8): It's raining. Better watch out for lightings.
+Helicopter#H4(9): This is hot.
+Baloon#B2(2): Damn you rain! You messed up my baloon
+JetPlane#J1(3): It's smooth flying on this sunny day
+HelicopterH3(6): This fog is gonna cause a bumpy one, hang on boys!
+JetPlane#J2(8): Good thing we're flying fast enough to dodge this fog.
+Helicopter#H4(9): This is hot.
+Baloon#B2(2): It's snowing. We're gonna crash.
+Baloon#B2(2) has landed at 1, 8, 0 
+Baloon#B2(2) has deregistered from the weather tower
+Helicopter#H3(6): This is hot.
+JetPlane#J2(8): It's smooth flying on this sunny day
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+Helicopter#H3(6): I hope this rain doesnt rust up my blades...
+JetPlane#J2(8): It's raining. Better watch out for lightings.
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+HelicopterH3(6): This fog is gonna cause a bumpy one, hang on boys!
+JetPlane#J2(8): Good thing we're flying fast enough to dodge this fog.
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+Helicopter#H3(6): This is hot.
+JetPlane#J2(8): It's smooth flying on this sunny day
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+Helicopter#H3(6): I hope this rain doesnt rust up my blades...
+JetPlane#J2(8): It's raining. Better watch out for lightings.
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+HelicopterH3(6): This fog is gonna cause a bumpy one, hang on boys!
+JetPlane#J2(8): Good thing we're flying fast enough to dodge this fog.
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+Helicopter#H3(6): This is hot.
+JetPlane#J2(8): It's smooth flying on this sunny day
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+Helicopter#H3(6): I hope this rain doesnt rust up my blades...
+JetPlane#J2(8): It's raining. Better watch out for lightings.
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+HelicopterH3(6): This fog is gonna cause a bumpy one, hang on boys!
+JetPlane#J2(8): Good thing we're flying fast enough to dodge this fog.
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+Helicopter#H3(6): This is hot.
+JetPlane#J2(8): It's smooth flying on this sunny day
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+Helicopter#H3(6): I hope this rain doesnt rust up my blades...
+JetPlane#J2(8): It's raining. Better watch out for lightings.
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+HelicopterH3(6): This fog is gonna cause a bumpy one, hang on boys!
+JetPlane#J2(8): Good thing we're flying fast enough to dodge this fog.
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+Helicopter#H3(6): This is hot.
+JetPlane#J2(8): It's smooth flying on this sunny day
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+Helicopter#H3(6): I hope this rain doesnt rust up my blades...
+JetPlane#J2(8): It's raining. Better watch out for lightings.
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+HelicopterH3(6): This fog is gonna cause a bumpy one, hang on boys!
+JetPlane#J2(8): Good thing we're flying fast enough to dodge this fog.
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+Helicopter#H3(6): This is hot.
+JetPlane#J2(8): It's smooth flying on this sunny day
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+Helicopter#H3(6): I hope this rain doesnt rust up my blades...
+JetPlane#J2(8): It's raining. Better watch out for lightings.
+Helicopter#H4(9): This is hot.
+JetPlane#J1(3): It's smooth flying on this sunny day
+HelicopterH3(6): This fog is gonna cause a bumpy one, hang on boys!
+JetPlane#J2(8): Good thing we're flying fast enough to dodge this fog.
+Helicopter#H4(9): This is hot.

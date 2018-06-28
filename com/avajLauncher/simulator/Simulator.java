@@ -9,17 +9,15 @@ public class Simulator {
 
 	private static WeatherTower weatherTower;
     private static List<Flyable> flyableList = new ArrayList<>();
-	public static PrintWriter	writer;
+	public static PrintWriter	writer = null;
 
     public static void main(String[] args) throws IOException
     {
-					System.out.println("fly");
         try {
 
             BufferedReader reader = new BufferedReader(new FileReader(args[0]));
 			File simFile = new File("simulation.txt");
 			writer = new PrintWriter(simFile);
-			writer.print("Test!");
 
             String line = reader.readLine();
             if (line != null) {
@@ -49,11 +47,9 @@ public class Simulator {
                 }
                 for (int i = 1; i <= simulation; i++)
                 {
-                    String simulationWrite = "Simulation: " + i + "\n";
-					System.out.println(simulationWrite);
-                    //weatherTower.writeToFile("write", simulationWrite);
                     weatherTower.changeWeather();
                 }
+				writer.close();
             }
         }
         catch (FileNotFoundException e)

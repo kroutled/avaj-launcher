@@ -25,16 +25,24 @@ public class Coordinates {
 
 	public int getLongitude()
 	{
+		if (this.longitude <= 0)
+			this.longitude = 0;
 		return this.longitude;
 	}
 
 	public int getLatitude()
 	{
+		if (this.latitude <= 0)
+			this.latitude = 0;
 		return this.latitude;
 	}
 
 	public int getHeight()
 	{
+		if (this.height <= 0)
+			this.height = 0;
+		if (this.height >= 100)
+			this.height = 100;
 		return this.height;
 	}
 

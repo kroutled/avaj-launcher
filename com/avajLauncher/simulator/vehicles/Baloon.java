@@ -10,7 +10,7 @@ public class Baloon extends Aircraft implements Flyable {
 
 	Baloon (String name, Coordinates coordinates)
 	{
-		//super(name, coordinates);
+		super(name, coordinates);
 		this.name = name;
 		this.coordinates = coordinates;
 	}	
@@ -24,20 +24,20 @@ public class Baloon extends Aircraft implements Flyable {
 		{
 			case "RAIN":
 				this.coordinates.setHeight(this.coordinates.getHeight() - 5);
-				System.out.println("Damn you rain! You messed up my baloon");
+				Simulator.writer.printf("Baloon#%s(%d): Damn you rain! You messed up my baloon\n", this.name, this.id);
 				break;
 			case "FOG":
 				this.coordinates.setHeight(this.coordinates.getHeight() - 3);
-				System.out.println("Cant see anything with this damn fog!");
+				Simulator.writer.printf("Baloon#%s(%d): Cant see anything with this damn fog!\n", this.name, this.id);
 				break;
 			case "SUN":
 				this.coordinates.setLongitude(this.coordinates.getLongitude() + 2);
 				this.coordinates.setHeight(this.coordinates.getHeight() + 4);
-				System.out.println("I can see everything with this sun, how awesome!");
+				Simulator.writer.printf("Baloon#%s(%d): I can see everything with this sun, how awesome!\n", this.name, this.id);
 				break;
 			case "SNOW":
 				this.coordinates.setHeight(this.coordinates.getHeight() - 15);
-				System.out.println("It's snowing. We're gonna crash.");
+				Simulator.writer.printf("Baloon#%s(%d): It's snowing. We're gonna crash.\n", this.name, this.id);
 				break;
 		}
 		
@@ -46,14 +46,15 @@ public class Baloon extends Aircraft implements Flyable {
 
 		if (this.coordinates.getHeight() <= 0)
 		{
-			System.out.printf("Baloon#%s(%d) has landed and deregistered from the weather tower\n", this.name, this.id);
+			Simulator.writer.printf("Baloon#%s(%d) has landed at %d, %d, %d \n" , this.name, this.id, this.coordinates.getLongitude(), this.coordinates.getLatitude(), this.coordinates.getHeight());
+			Simulator.writer.printf("Baloon#%s(%d) has deregistered from the weather tower\n", this.name, this.id);
 			this.weatherTower.unregister(this);
 		}
 	}
 
 	public void	registerTower(WeatherTower weatherTower)
 	{	
-		System.out.println("Tower says: " + "Baloon#" + this.name + "(" + this.id + ")" + " registered to weather tower.\n");
+		Simulator.writer.printf("Tower says: " + "Baloon#" + this.name + "(" + this.id + ")" + " registered to weather tower.\n");
 		this.weatherTower = weatherTower;
 		this.weatherTower.register(this);
 	}

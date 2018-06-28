@@ -2,24 +2,24 @@ package com.avajLauncher.simulator.vehicles;
 
 import com.avajLauncher.weather.Coordinates;
 
-public class Aircraft {
+public abstract class Aircraft {
 
 	protected long id = 0;
 	protected String name;
 	protected Coordinates coordinates;
 
-	private static long idCounter = 0;
+	private static long idCounter;
 
-	protected void  Aircraft(String name, Coordinates coordinates)
+	protected Aircraft(String name, Coordinates coordinates)
 	{
+		this.id = nextId();
 		this.name = name;
 		this.coordinates = coordinates;
-		this.id = nextId();
 	}
 
 	private	long nextId()
 	{
-		idCounter++;
-		return idCounter;
+		++Aircraft.idCounter;
+		return (Aircraft.idCounter);
 	}
 }
