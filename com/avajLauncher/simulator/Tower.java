@@ -4,17 +4,17 @@ import java.util.List;
 import java.util.ArrayList;
 import com.avajLauncher.simulator.vehicles.Flyable;
 
-public abstract class Tower {
+public class Tower {
 	
 	private List<Flyable> observers = new ArrayList<Flyable>();
 
 
 	public void register(Flyable flyable)
 	{
-		if (observers.contains(flyable) == false)
-		{
+		//if (observers.contains(flyable) == false)
+		//{
 			observers.add(flyable);
-		}
+		//}
 	}
 
 	public void unregister(Flyable flyable)
@@ -27,9 +27,9 @@ public abstract class Tower {
 
 	protected void conditionsChanged()
 	{
-		for (Flyable flyable:observers)
+		for (int i = 0; i  < observers.size(); i++)
 		{
-			flyable.updateConditions();
+			observers.get(i).updateConditions();
 		}
 	}
 }

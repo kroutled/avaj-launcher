@@ -1,18 +1,17 @@
 package com.avajLauncher.weather;
 
 public class WeatherProvider {
-	private static WeatherProvider weatherProvider = null;
-	private static String[] weather;
+	private static WeatherProvider weatherProvider = new WeatherProvider();
+	private static String[] weather = {"RAIN", "FOG", "SUN", "SNOW"};
 
 	private  WeatherProvider()
 	{
-		weatherProvider = new WeatherProvider();
-		weather = new String[]{"RAIN", "FOG", "SUN", "SNOW"};
+
 	}
 
 	public static WeatherProvider getProvider()
 	{
-		return weatherProvider;
+		return WeatherProvider.weatherProvider;
 	}
 
 	public String getCurrentWeather(Coordinates coordinates)
